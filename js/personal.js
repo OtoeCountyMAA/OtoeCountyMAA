@@ -133,10 +133,10 @@
 				});
 			});
 
-			// Blog grid layout
-			$('.blog-wrap').imagesLoaded( function() {
-				$('.blog-wrap').masonry({
-					itemSelector: '.blog-post',
+			// News grid layout
+			$('.news-wrap').imagesLoaded( function() {
+				$('.news-wrap').masonry({
+					itemSelector: '.news-post',
 					transitionDuration: 0
 				});
 			});

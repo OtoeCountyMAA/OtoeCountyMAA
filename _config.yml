@@ -7,12 +7,12 @@ collections:
   pages:
     output: true
     permalink: /:name
-  posts:
+  news:
     output: true
-    permalink: /blog/:slug
-  projects:
+    permalink: /news/:slug
+  departments:
     output: true
-    permalink: /project/:slug
+    permalink: /department/:slug
 
 defaults:
   -
@@ -29,15 +29,15 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: "news"
     values:
       layout: "post"
   -
     scope:
       path: ""
-      type: "projects"
+      type: "departments"
     values:
-      layout: "project"
+      layout: "department"
 
 markdown: kramdown
 
@@ -53,5 +53,5 @@ plugins:
   - jekyll-sitemap
 
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: "/news/page:num/"
   

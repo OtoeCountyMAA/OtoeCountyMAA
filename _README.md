@@ -33,11 +33,11 @@ The main things you might need to change here are:
 
 `url:` – the full URL that your site will be hosted at, e.g. https://your-domain.com
 
-`baseurl:` – add a base URL here if you will be publishing the site inside a folder, e.g. https://your-domain.com/project/ – or if you're hosting it as a 'project page' on GitHub Pages. Example: `baseurl: /project`
+`baseurl:` – add a base URL here if you will be publishing the site inside a folder, e.g. https://your-domain.com/department/ – or if you're hosting it as a 'department page' on GitHub Pages. Example: `baseurl: /department`
 
-When using baseurl, you should reference images in your post/project Frontmatter **without** the baseurl, e.g. `/images/image.jpg` but images inside the Markdown content **should include** the baseurl snippet, e.g. `{{site.baseurl}}/images/image.jpg`
+When using baseurl, you should reference images in your post/department Frontmatter **without** the baseurl, e.g. `/images/image.jpg` but images inside the Markdown content **should include** the baseurl snippet, e.g. `{{site.baseurl}}/images/image.jpg`
 
-`paginate: 6` – change this to set the number of blog posts on each page
+`paginate: 6` – change this to set the number of news items on each page
 
 You can also change more advanced things here like the path names, collections etc. You do not need to change any of these to achieve the same look as the demo, so best to leave everything else unless you are confident.
 
@@ -59,7 +59,7 @@ You'll find this inside the `_data` folder – this is where you can set all of 
 
 **Menu settings**
 
-This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/blog/` or `/projects/`).
+This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/news/` or `/departments/`).
 
 **Footer settings**
 
@@ -67,7 +67,7 @@ This allows you to set the links inside your menu. Add each one as a list item w
 
 **Hero settings**
 
-`overlay_opacity` – this sets the opacity of the overlay when you hover over grid items (portfolio and blog posts). Use a decimal value here, e.g. `0.8` will give you 80% opacity on hover.
+`overlay_opacity` – this sets the opacity of the overlay when you hover over grid items (portfolio and news items). Use a decimal value here, e.g. `0.8` will give you 80% opacity on hover.
 
 **Post settings**
 
@@ -123,11 +123,11 @@ Below these options, you'll see options for each typographical element used in t
 
 Inside the `/images/` folder you'll find a few images included with the theme.
 
-The images in the `/demo/` subfolder are used in the demo project, post and page – you delete those if you don't need them.
+The images in the `` subfolder are used in the demo department, post and page – you delete those if you don't need them.
 
 `favicon.png` – you should replace this with the favicon image you'd like to use for your website.
 
-`social.jpg` – this image is used by default as the meta image on the Home and Blog pages. This shows up on social shares of your page, for example Facebook or Twitter – so you should change it to a relevant image, or change the image URL in that page's Front Matter (see below).
+`social.jpg` – this image is used by default as the meta image on the Home and News pages. This shows up on social shares of your page, for example Facebook or Twitter – so you should change it to a relevant image, or change the image URL in that page's Front Matter (see below).
 
 ---
 
@@ -145,15 +145,15 @@ This is your website home page. You can edit some details in the Front Matter at
 
 Below the Front Matter is the code for the page. You should edit this to set your title and intro text. Hint - the main <h1> tag respects line breaks on tablet size screens and larger. This is useful if you want to prevent typographic widows.
 
-### The blog page – `/blog/index.html`
+### The news page – `/news/index.html`
 
-This is the blog listing page, which shows all your blog posts. You can edit the same things as on the home page to customise it for your website.
+This is the news listing page, which shows all your news items. You can edit the same things as on the home page to customise it for your website.
 
 ---
 
-## Projects, posts and pages
+## departments, posts and pages
 
-These control the main content of your website, and are found inside the `_projects`, `_posts` and `_pages` folders.
+These control the main content of your website, and are found inside the `_departments`, `_posts` and `_pages` folders.
 
 Take a look at the demo content inside each folder for full descriptions on what you can do inside these, and to use as a template for your own content.
 
