@@ -12,7 +12,7 @@ collections:
     permalink: /news/:slug
   departments:
     output: true
-    permalink: /department/:slug
+    permalink: /departments/:slug
 
 defaults:
   -
